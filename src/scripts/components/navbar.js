@@ -10,7 +10,7 @@ class NavBar extends HTMLElement {
           <img src="./images/logo-restopedia.png">
           </div>
           <button class="nav-hamburger" id="hamburger" href="#" aria-label="menu">
-            <i class="fas fa-bars"></i>
+            <i class="fa fa-bars"></i>
         </button>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">

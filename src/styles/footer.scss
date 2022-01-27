@@ -1,13 +1,20 @@
 footer {
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
-  text-align: center;
   padding: 15px 0px 15px 0px;
-  color: #fff;
-  background-color: rgb(0, 0, 0);
-}
+  color: maroon;
+  background-color: whitesmoke;
+  h2 {
+    font-size: 1em;
+    text-align: center;
 
-footer h2 {
-  font-size: 1em;
-  font-weight: 500;
-  font-style: italic;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .icon {
+    text-decoration: none;
+    color: maroon;
+  }
 }

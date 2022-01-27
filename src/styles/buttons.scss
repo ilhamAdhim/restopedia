@@ -11,20 +11,17 @@ button {
   background-color: #f9a826;
 }
 
-.button_card_header_clear,
-.submit_add_book {
+.button_card_header_clear {
   background-color: #f50057;
 }
 
-.button_card_header_clear:before,
-.submit_add_book:before {
+.button_card_header_clear:before {
   background-color: #f9a826;
 }
 
 .button_jumbotron,
 .button_card_header,
-.button_card_header_clear,
-.submit_add_book {
+.button_card_header_clear {
   width: 200px;
   border-radius: 0.4em;
   border-width: 0;
@@ -62,8 +59,7 @@ button {
 
 .button_jumbotron:before,
 .button_card_header:before,
-.button_card_header_clear:before,
-.submit_add_book:before {
+.button_card_header_clear:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
@@ -80,38 +76,35 @@ button {
 
 .button_jumbotron:hover:before,
 .button_card_header:hover:before,
-.button_card_header_clear:hover:before,
-.submit_add_book:hover:before {
+.button_card_header_clear:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
 
 .button_jumbotron:after,
 .button_card_header:after,
-.button_card_header_clear:after,
-.submit_add_book:after {
+.button_card_header_clear:after {
   background-color: #ffffff;
 }
 
 .button_jumbotron span,
 .button_card_header span,
-.button_card_header_clear span,
-.submit_add_book span {
+.button_card_header_clear span {
   z-index: 1;
   position: relative;
 }
 
-#btn_search {
-  width: 3.5em;
-  height: 3.5em;
-  outline: none;
-  border: none;
-  border-radius: 50%;
-  background-color: #f9a826;
-  color: white;
-  transition: transform 0.2s;
-}
+// #btn_search {
+//   width: 3.5em;
+//   height: 3.5em;
+//   outline: none;
+//   border: none;
+//   border-radius: 50%;
+//   background-color: #f9a826;
+//   color: white;
+//   transition: transform 0.2s;
+// }
 
-#btn_search:hover {
-  transform: scale(1.1);
-}
+// #btn_search:hover {
+//   transform: scale(1.1);
+// }
