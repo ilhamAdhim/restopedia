@@ -4,6 +4,11 @@ button {
 
 .button_jumbotron {
   margin-top: 2em;
+  span {
+    font-size: 100;
+    z-index: 1;
+    position: relative;
+  }
 }
 
 .button_jumbotron,
@@ -87,11 +92,21 @@ button {
   background-color: #ffffff;
 }
 
-.button_jumbotron span,
-.button_card_header span,
-.button_card_header_clear span {
-  z-index: 1;
-  position: relative;
+@media screen and (max-width: 680px) {
+  .button_jumbotron {
+    width: 30vw;
+    span {
+      font-size: 2.8vw;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) and (min-width: 460px) {
+  .button_jumbotron {
+    span {
+      font-size: 2.3vw;
+    }
+  }
 }
 
 // #btn_search {

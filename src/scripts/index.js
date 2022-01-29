@@ -7,6 +7,8 @@ import "../styles/hero.scss";
 
 import "../scripts/components/navbar.js";
 import "../scripts/components/hero.js";
+import "../scripts/components/ListData.js";
+import "../scripts/components/ListItem.js";
 import { navbar } from "./setnavbar.js";
 
 navbar();

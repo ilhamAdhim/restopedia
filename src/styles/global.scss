@@ -5,10 +5,16 @@ $button-color: #373737;
 * {
   box-sizing: border-box;
 }
-img {
-  display: block;
-}
 
-h1 {
-  color: $text-color;
+body {
+  position: relative;
+  min-height: 100vh;
+
+  img {
+    display: block;
+  }
+
+  h1 {
+    color: $text-color;
+  }
 }

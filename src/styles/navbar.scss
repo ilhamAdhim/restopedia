@@ -5,6 +5,7 @@ nav {
   justify-items: space-between;
   align-items: space-between;
   width: 100%;
+  // border-bottom: 1px solid #bbbbbb;
   margin-bottom: 1em;
   .nav-logo img {
     height: 80px;
@@ -27,9 +28,31 @@ nav {
     list-style-type: none;
   }
 
-  a {
+  .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #f9a826;
+  }
+
+  .nav-link {
     text-decoration: none;
     color: maroon;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-link-grow-up::before {
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+  }
+
+  .nav-link-grow-up:hover::before {
+    height: 5px;
   }
 
   .open {
@@ -38,7 +61,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 680px) {
   nav {
     margin-bottom: 0;
 
@@ -63,6 +86,13 @@ nav {
       .nav-item {
         display: none;
       }
+    }
+
+    .nav-link-grow-up::before {
+      height: 0%;
+      width: 30%;
+      margin-left: -5vw;
+      bottom: 0px;
     }
 
     .sidenav {

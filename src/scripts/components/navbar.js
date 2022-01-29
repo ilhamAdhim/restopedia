@@ -14,24 +14,24 @@ class NavBar extends HTMLElement {
         </button>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#/" class="nav-link">Home</a>
+                    <a href="#/" class="nav-link nav-link-grow-up">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#/favorite" class="nav-link">Favorite</a>
+                    <a href="#/favorite" class="nav-link nav-link-grow-up">Favorite</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://github.com/ilhamAdhim" class="nav-link" target="_blank" rel="noreferrer">About</a>
+                    <a href="https://github.com/ilhamAdhim" class="nav-link nav-link-grow-up" target="_blank" rel="noreferrer">About</a>
                 </li>
             </ul>
             <ul class="sidenav" id="drawer">
               <li class="nav-item">
-                  <a href="/" class="nav-link">Home</a>
+                  <a href="/" class="nav-link nav-link-grow-up">Home</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">Favorite</a>
+                  <a href="#" class="nav-link nav-link-grow-up">Favorite</a>
               </li>
               <li class="nav-item">
-                  <a href="https://github.com/ilhamAdhim" class="nav-link" target="_blank" rel="noreferrer">About</a>
+                  <a href="https://github.com/ilhamAdhim" class="nav-link nav-link-grow-up" target="_blank" rel="noreferrer">About</a>
               </li>
             </ul> 
           </nav>
