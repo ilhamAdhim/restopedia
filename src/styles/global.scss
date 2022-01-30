@@ -6,15 +6,27 @@ $button-color: #373737;
   box-sizing: border-box;
 }
 
-body {
-  position: relative;
-  min-height: 100vh;
+html {
+  scroll-behavior: smooth;
+}
 
+body {
   img {
     display: block;
   }
 
   h1 {
     color: $text-color;
+  }
+
+  .card-list {
+    display: flex;
+  }
+
+  main {
+    h2 {
+      text-align: center;
+      color: maroon;
+    }
   }
 }
