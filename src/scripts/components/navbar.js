@@ -7,7 +7,7 @@ class NavBar extends HTMLElement {
     this.innerHTML = `
         <nav>
           <div class="nav-logo">
-          <img src="./images/logo-restopedia.png">
+          <img src="./images/logo-restopedia.png" alt="logo-restopedia">
           </div>
           <button class="nav-hamburger" id="hamburger" href="#" aria-label="menu">
             <i class="fa fa-bars"></i>
