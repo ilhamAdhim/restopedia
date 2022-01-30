@@ -20,12 +20,18 @@ footer {
   }
 
   a {
+    height: 45px;
+    width: 45px;
+
     text-decoration: none;
     color: maroon;
-    font-size: 3em;
     &:focus {
-      padding: 0.5em;
       outline: 4px solid #f9a826;
+    }
+    .icon {
+      font-size: 3em;
+      width: 100%;
+      height: 100%;
     }
   }
 }

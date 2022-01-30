@@ -1,7 +1,7 @@
 .jumbotron-wrapper {
   position: relative;
   .bg-image img {
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
     object-fit: contain;
   }
@@ -36,9 +36,10 @@
   .jumbotron-wrapper {
     position: relative;
     .bg-image img {
+      margin: 0;
+      padding: 0;
       width: 100%;
       height: 100%;
-      padding: 1em;
       object-fit: contain;
     }
   }
