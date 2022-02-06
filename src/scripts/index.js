@@ -9,7 +9,7 @@ import "../styles/card-item.scss";
 import "../scripts/components/navbar.js";
 import "../scripts/components/hero.js";
 import "../scripts/components/ListData.js";
-import "./service-worker.js";
+import "./utils/subscribe-sw.js";
 
 import { navbar } from "./utils/setnavbar.js";
 

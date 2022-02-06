@@ -1,18 +1,37 @@
-self.addEventListener("install", (event) => {
-  console.log("Installing Service Worker ...");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-sw.js"
+);
 
-  // TODO: Caching App Shell Resource
-});
+if (workbox) console.log(`Workbox berhasil dimuat`);
+else console.log(`Workbox gagal dimuat`);
 
-self.addEventListener("activate", (event) => {
-  console.log("Activating Service Worker ...");
+console.log("tes");
 
-  // TODO: Delete old caches
-});
+workbox.precaching.precacheAndRoute([
+  // HTML
+  "./index.html",
 
-self.addEventListener("fetch", (event) => {
-  console.log(event.request);
+  // CSS
+  "./styles/buttons.scss",
+  "./styles/card-item.scss",
+  "./styles/footer.scss",
+  "./styles/global.scss",
+  "./styles/hero.scss",
+  "./styles/navbar.scss",
 
-  event.respondWith(fetch(event.request));
-  // TODO: Add/get fetch request to/from caches
-});
+  // JS
+  "./scripts/components/*",
+  "./scripts/utils/*",
+  "./scripts/index.js*",
+  "./scripts/service-worker.js*",
+
+  // Assets
+  "./public/*",
+]);
+
+workbox.routing.registerRoute(
+  new RegExp("/templates/"),
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: "pages",
+  })
+);

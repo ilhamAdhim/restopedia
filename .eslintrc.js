@@ -9,7 +9,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    indent: ["error", "tab"],
+    indent: "tab",
     "linebreak-style": ["error", "windows"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
