@@ -1,12 +1,14 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const path = require("path");
 
 module.exports = {
   stats: "errors-only",
-  entry: path.resolve(__dirname, "src/scripts/index.js"),
+  entry: {
+    app: path.resolve(__dirname, "src/scripts/index.js"),
+    "service-worker": path.resolve(__dirname, "src/scripts/service-worker.js"),
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -40,6 +42,7 @@ module.exports = {
       template: path.resolve(__dirname, "src/templates/index.html"),
       filename: "index.html",
     }),
+
     new CopyWebpackPlugin({
       patterns: [
         {
