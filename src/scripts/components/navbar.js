@@ -1,10 +1,10 @@
 class NavBar extends HTMLElement {
-  connectedCallback() {
-    this._render();
-  }
+	connectedCallback() {
+		this._render();
+	}
 
-  _render() {
-    this.innerHTML = `
+	_render() {
+		this.innerHTML = `
         <nav>
           <div class="nav-logo">
           <img src="./images/logo-restopedia.png" alt="logo-restopedia">
@@ -36,7 +36,7 @@ class NavBar extends HTMLElement {
             </ul> 
           </nav>
         `;
-  }
+	}
 }
 
 customElements.define("nav-bar", NavBar);

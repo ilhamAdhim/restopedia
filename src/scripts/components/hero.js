@@ -1,14 +1,14 @@
 class Hero extends HTMLElement {
-  connectedCallback() {
-    this._render();
-  }
+	connectedCallback() {
+		this._render();
+	}
 
-  _render() {
-    this.innerHTML = `
+	_render() {
+		this.innerHTML = `
         
 
           `;
-  }
+	}
 }
 
 customElements.define("hero-element", Hero);
