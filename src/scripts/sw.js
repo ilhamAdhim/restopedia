@@ -5,7 +5,7 @@ import { StaleWhileRevalidate } from "workbox-strategies";
 
 precacheAndRoute(self.__WB_MANIFEST);
 
-console.log("tes");
+console.log("tes updated");
 
 registerRoute(
   new RegExp("/templates/"),

@@ -6,11 +6,21 @@ import "../styles/navbar.scss";
 import "../styles/hero.scss";
 import "../styles/card-item.scss";
 
-import "../scripts/components/navbar.js";
-import "../scripts/components/hero.js";
+import "./components/Navbar.js";
+import "../scripts/components/JumbotronComponent.js";
 import "../scripts/components/ListData.js";
+import "../scripts/components/CardItem";
 
-import main from "./view/main";
+import App from "./view/app.js";
 
-console.log("Hello Coders! aa)");
-main();
+const app = new App({
+  content: document.querySelector("#content"),
+});
+
+window.addEventListener("hashchange", () => {
+  app.renderPage();
+});
+
+window.addEventListener("load", () => {
+  app.renderPage();
+});
