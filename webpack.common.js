@@ -7,7 +7,6 @@ module.exports = {
   stats: "errors-only",
   entry: {
     app: path.resolve(__dirname, "src/scripts/index.js"),
-    "service-worker": path.resolve(__dirname, "src/scripts/service-worker.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),

@@ -9,12 +9,8 @@ import "../styles/card-item.scss";
 import "../scripts/components/navbar.js";
 import "../scripts/components/hero.js";
 import "../scripts/components/ListData.js";
-import "./service-worker.js";
 
-import { navbar } from "./utils/setnavbar.js";
-import { getAllRestaurant } from "./data/api-handler";
 import main from "./view/main";
 
-navbar();
 console.log("Hello Coders! aa)");
 main();
