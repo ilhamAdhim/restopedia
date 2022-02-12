@@ -1,19 +1,23 @@
-import dataJSON from "../../DATA.json";
-
 class ListData extends HTMLElement {
 	constructor() {
 		super();
 	}
 
 	connectedCallback() {
-		this._restaurants = dataJSON?.restaurants;
 		this._render();
+	}
+
+	set restaurants(restaurants) {
+		this._restaurants = restaurants;
+	}
+
+	set role(role) {
+		this._role = role;
 	}
 
 	_render() {
 		// let delay = 0;
 		this._restaurants?.forEach((restaurant) => {
-			console.log(restaurant);
 			// delay += 50;
 			this.className = "card-list";
 			this.description = restaurant?.description

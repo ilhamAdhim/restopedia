@@ -12,6 +12,9 @@ import "../scripts/components/ListData.js";
 import "./service-worker.js";
 
 import { navbar } from "./utils/setnavbar.js";
+import { getAllRestaurant } from "./data/api-handler";
+import main from "./view/main";
 
 navbar();
-console.log("Hello Coders! :)");
+console.log("Hello Coders! aa)");
+main();
