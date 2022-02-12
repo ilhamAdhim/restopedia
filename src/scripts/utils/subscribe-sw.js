@@ -1,16 +1,16 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-    navigator.serviceWorker
-      .register("./sw.js")
-      .then(function () {
-        console.log("Pendaftaran ServiceWorker berhasil");
-      })
-      .catch(function (err) {
-        console.log(err);
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", function () {
+//     navigator.serviceWorker
+//       .register("./sw.js")
+//       .then(function () {
+//         console.log("Pendaftaran ServiceWorker berhasil");
+//       })
+//       .catch(function (err) {
+//         console.log(err);
 
-        console.log("Pendaftaran ServiceWorker gagal");
-      });
-  });
-} else {
-  console.log("ServiceWorker belum didukung browser ini.");
-}
+//         console.log("Pendaftaran ServiceWorker gagal");
+//       });
+//   });
+// } else {
+//   console.log("ServiceWorker belum didukung browser ini.");
+// }
