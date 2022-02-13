@@ -1,0 +1,166 @@
+.resto-primary-info {
+  vertical-align: middle;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+#daftar-makanan,
+#daftar-minuman {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  .card-menu {
+    flex-basis: 30%;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+}
+.card-review,
+.card-menu {
+  padding: 1em;
+  margin: 1em 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .card-review-header {
+    display: flex;
+    justify-content: space-between;
+    .reviewer {
+      font-weight: bold;
+    }
+  }
+
+  blockquote {
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+    margin: 1em;
+    quotes: "“" "”" "‘" "’";
+  }
+}
+
+.resto-location-detail {
+  display: flex;
+  justify-content: end;
+  color: maroon;
+  font-weight: 700;
+
+  .icon {
+    font-size: 2em;
+  }
+  div {
+    margin: 0.2em 1em 0;
+    font-size: 1.3em;
+  }
+}
+
+.resto-overview,
+.resto-location-detail {
+  margin: 1em 0;
+}
+
+.resto-description {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.resto-overview,
+.resto-primary-info {
+  color: maroon;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.layout-detail {
+  margin: 2em 0;
+}
+
+.layout-detail,
+.resto-primary-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+
+  .detail-resto-card {
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    hr {
+      border: 1px solid rgba($color: #5e5e5e, $alpha: 0.1);
+      margin: 1em;
+    }
+  }
+
+  .card-image {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .col {
+    &:first-child {
+      width: 65%;
+      flex-grow: 3;
+    }
+    &:last-child {
+      width: 35%;
+      flex-grow: 2;
+    }
+  }
+}
+
+// Large screen
+@media screen and (max-width: 1100px) and (min-width: 860px) {
+  .layout-detail {
+    flex-direction: column;
+    .col {
+      width: 100%;
+      &:first-child {
+        width: 100%;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Medium screen
+@media screen and (max-width: 850px) and (min-width: 541px) {
+  .layout-detail {
+    flex-direction: column;
+    blockquote {
+      margin: 0;
+    }
+    .col {
+      width: 100%;
+      &:first-child {
+        width: 100%;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .layout-detail {
+    flex-direction: column;
+    blockquote {
+      margin: 0;
+    }
+    .col {
+      width: 100%;
+      &:first-child {
+        width: 100%;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}

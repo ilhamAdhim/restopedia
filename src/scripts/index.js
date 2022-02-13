@@ -5,11 +5,15 @@ import "../styles/buttons.scss";
 import "../styles/navbar.scss";
 import "../styles/hero.scss";
 import "../styles/card-item.scss";
+import "../styles/loader.scss";
+import "../styles/detailResto.scss";
 
 import "./components/Navbar.js";
 import "../scripts/components/JumbotronComponent.js";
-import "../scripts/components/ListData.js";
+import "../scripts/components/ListData";
 import "../scripts/components/CardItem";
+import "../scripts/components/DetailResto";
+import "../scripts/components/LoadingIndicator";
 
 import App from "./view/app.js";
 

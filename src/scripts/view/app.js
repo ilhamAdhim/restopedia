@@ -15,12 +15,6 @@ class App {
     console.log(page, "ini apge");
     this._content.innerHTML = await page.renderPage();
     await page.afterRenderPage();
-
-    // const skipLinkElem = document.querySelector(".skip-link");
-    // skipLinkElem.addEventListener("click", (event) => {
-    //   event.preventDefault();
-    //   document.querySelector("#mainContent").focus();
-    // });
   }
 }
 

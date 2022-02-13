@@ -1,11 +1,20 @@
 class LikeButton extends HTMLElement {
   connectedCallback() {
-    this._render();
+    this._renderNormal();
   }
 
-  _render() {
+  _renderLiked() {
     this.innerHTML = `
-       
+    <button class="btn-fav" aria-label="Unlike this restaurant"> 
+      <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+    </button>
+            `;
+  }
+  _renderNormal() {
+    this.innerHTML = `
+    <button class="btn-fav" aria-label="Like this restaurant"> 
+      <i class="fa fa-heart icon" aria-hidden="true"></i>
+    </button>
             `;
   }
 }

@@ -17,10 +17,19 @@ button {
   margin-top: 2em;
 }
 
+.btn-lihat-detail {
+  width: 100%;
+}
+
 .button_jumbotron,
+.button-kembali {
+  width: 200px;
+}
+
+.button_jumbotron,
+.button-kembali,
 .btn-lihat-detail {
   background-color: #f9a826;
-  width: 200px;
   min-height: 45px;
   border-radius: 0.4em;
   border-width: 0;

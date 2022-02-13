@@ -10,7 +10,8 @@
 .card {
   width: 30%;
   padding: 1em;
-  box-shadow: rgba(0, 0, 0, 0.2) 5px 18px 26px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   margin: 1em;
   flex-direction: row;
   justify-content: center;
@@ -21,10 +22,14 @@
     object-fit: contain;
   }
 
+  .col .resto-location {
+    margin-top: 1em;
+    vertical-align: middle;
+  }
+
   .card-title {
     margin: 1em 0;
     font-weight: bold;
-
     text-align: center;
   }
 
@@ -46,7 +51,6 @@
 }
 
 // Large screen
-
 @media screen and (max-width: 1100px) and (min-width: 860px) {
   .card-list {
     padding: 0;
@@ -61,18 +65,21 @@
   .card-list {
     flex-direction: row;
     flex-wrap: wrap;
-
     margin-top: 2em;
     padding: 0;
   }
 
   .card {
     width: 43%;
-
     img {
       height: 150px;
       object-fit: cover;
     }
+  }
+
+  .city-info {
+    justify-content: center;
+    flex-direction: column-reverse;
   }
 }
 
@@ -80,13 +87,15 @@
 @media screen and (max-width: 540px) {
   .card-list {
     flex-direction: column;
-    padding: 0;
+    padding: 1em;
   }
 
   .card {
-    width: 95%;
+    width: 100%;
     justify-content: center;
-
+    margin: 1em 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     img {
       display: block;
       margin-left: auto;
@@ -98,5 +107,6 @@
 
   .city-info {
     justify-content: center;
+    flex-direction: column-reverse;
   }
 }

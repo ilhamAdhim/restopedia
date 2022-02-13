@@ -5,8 +5,9 @@ const Home = {
   async renderPage() {
     return `
     <loading-indicator></loading-indicator>
-        <jumbotron-component></jumbotron-component>
+  
     <div id="content">
+    <jumbotron-component></jumbotron-component>
         <h2> Restaurant List </h2>
         <list-data></list-data>
     </div>
@@ -17,8 +18,6 @@ const Home = {
     const contentContainer = document.querySelector("#content");
     const loadingContainer = document.querySelector("loading-indicator");
     const restaurantListElement = document.querySelector("list-data");
-
-    console.log("Ini home js");
 
     loadingContainer.style.display = "block";
     contentContainer.style.display = "none";

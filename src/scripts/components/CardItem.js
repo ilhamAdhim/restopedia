@@ -30,9 +30,10 @@ class CardItem extends HTMLElement {
       </div>
       <div class="city-info">
           <div class="col">
-              <button class="btn-fav"> 
-              <i class="fa fa-heart icon"></i>
-              </button>
+             <div class="resto-location">
+                <i class="fa fa-map-marker icon"></i>
+                <span> ${this._restaurant?.city}</span>
+             </div>
           </div>
           <div class="col">
               <a href="${`/#/detail/${this._restaurant?.id}`}" class="btn-lihat-detail"> 
