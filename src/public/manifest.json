@@ -4,11 +4,11 @@
   "theme_color": "#a040a0",
   "background_color": "#EEEEEE",
   "description" : "Cari Restoran favorit anda disini",
-
   "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "orientation": "any",
+  "start_url": "/index.html",
+  "scope": "/index.html",
+  "crossorigin": "use-credentials",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

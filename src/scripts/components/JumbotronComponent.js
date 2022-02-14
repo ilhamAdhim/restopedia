@@ -12,7 +12,7 @@ class JumbotronComponent extends HTMLElement {
       <div class="bg-text">
         <h1>Restopedia</h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        <a class="button_jumbotron" href="#card-list">
+        <a class="button-jumbotron" href="#card-list">
           <span>
             Cari Restoran          
           </span>

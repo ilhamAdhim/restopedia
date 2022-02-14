@@ -13,9 +13,13 @@ import "../scripts/components/JumbotronComponent.js";
 import "../scripts/components/ListData";
 import "../scripts/components/CardItem";
 import "../scripts/components/DetailResto";
+import "../scripts/components/LikeButton";
 import "../scripts/components/LoadingIndicator";
 
 import App from "./view/app.js";
+import "./utils/subscribe-sw.js";
+
+// import registerSW from "./utils/subscribe-sw";
 
 const app = new App({
   content: document.querySelector("#content"),
@@ -27,4 +31,5 @@ window.addEventListener("hashchange", () => {
 
 window.addEventListener("load", () => {
   app.renderPage();
+  // registerSW();
 });

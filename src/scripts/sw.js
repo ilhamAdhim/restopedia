@@ -1,3 +1,4 @@
+import "regenerator-runtime";
 import { precacheAndRoute } from "workbox-precaching";
 
 import { registerRoute } from "workbox-routing";

@@ -11,22 +11,27 @@ button {
   width: 55px;
   outline: none;
   border: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
 }
 
-.button_jumbotron {
+.button-jumbotron {
   margin-top: 2em;
+}
+.button-kembali {
+  width: 120px;
 }
 
 .btn-lihat-detail {
   width: 100%;
 }
 
-.button_jumbotron,
-.button-kembali {
+.button-jumbotron {
   width: 200px;
 }
 
-.button_jumbotron,
+.button-jumbotron,
 .button-kembali,
 .btn-lihat-detail {
   background-color: #f9a826;
@@ -98,7 +103,7 @@ button {
 }
 
 @media screen and (max-width: 680px) {
-  .button_jumbotron {
+  .button-jumbotron {
     width: 30vw;
     span {
       font-size: 2.8vw;
@@ -107,7 +112,7 @@ button {
 }
 
 @media screen and (max-width: 680px) and (min-width: 460px) {
-  .button_jumbotron {
+  .button-jumbotron {
     span {
       font-size: 2.3vw;
     }
