@@ -4,7 +4,7 @@ import { navbar } from "../../utils/setnavbar";
 const Favorite = {
   async renderPage() {
     return `
-      <div class="favorite-page">  
+      <div id="content">  
         <h2> Restoran yang Disukai</h2>
 
         <div id="empty-data"></div>
@@ -20,17 +20,17 @@ const Favorite = {
 
     if (restoFavData.length === 0) {
       emptyDataContainer.style.display = "block";
-      emptyDataContainer.innerHTML = `
+      contentContainer.style.display = "none";
 
+      emptyDataContainer.innerHTML = `
           <img src="./images/not-found.png" alt="Data tidak ditemukan" class="image-not-found">
           <div class="primary-message"> Tidak ada restoran yang disukai </div>
           <div class="secondary-message"> Tambahkan restoran dengan klik icon hati di detail restoran </div>
       `;
-      contentContainer.style.display = "none";
     } else {
       emptyDataContainer.style.display = "none";
+      contentContainer.style.display = "flex";
 
-      contentContainer.style.display = "block";
       contentContainer.restaurants = restoFavData;
     }
     navbar();

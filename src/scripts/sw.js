@@ -37,13 +37,7 @@ registerRoute(
 // Cache for API data from dicoding dev
 registerRoute(
   new RegExp(CONFIG.BASE_URL),
-  StaleWhileRevalidate({
+  new StaleWhileRevalidate({
     cacheName: "cache-restopedia-data",
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxEntries: 100,
-        maxAgeSeconds: 30 * 60, // 30 Minutes
-      }),
-    ],
   })
 );
