@@ -1,10 +1,10 @@
 import APIHandler from "../../data/api-handler";
 import UrlParser from "../../routes/url-parser";
 import LikeButtonInitiator from "../../utils/set-like-button";
+import { navbar } from "../../utils/setnavbar";
 
 const Detail = {
   async renderPage() {
-    console.log("ini detail page");
     return `
         <div class="detail-page">
             <a class="button-kembali" href="/#/">
@@ -42,13 +42,15 @@ const Detail = {
       });
 
       detailRestoContainer.restaurant = dataRestaurant;
-      loadingContainer.style.display = "none";
       contentContainer.style.display = "block";
+      loadingContainer.style.display = "none";
     } catch (error) {
       loadingContainer.style.display = "none";
       contentContainer.style.display = "none";
       contentContainer.innerHTML = `INI ERROR : ${error}`;
     }
+
+    navbar();
   },
 };
 

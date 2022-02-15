@@ -7,6 +7,7 @@ import "../styles/hero.scss";
 import "../styles/card-item.scss";
 import "../styles/loader.scss";
 import "../styles/detailResto.scss";
+import "../styles/favorite.scss";
 
 import "./components/Navbar.js";
 import "../scripts/components/JumbotronComponent.js";
@@ -19,8 +20,6 @@ import "../scripts/components/LoadingIndicator";
 import App from "./view/app.js";
 import "./utils/subscribe-sw.js";
 
-// import registerSW from "./utils/subscribe-sw";
-
 const app = new App({
   content: document.querySelector("#content"),
 });
@@ -31,5 +30,4 @@ window.addEventListener("hashchange", () => {
 
 window.addEventListener("load", () => {
   app.renderPage();
-  // registerSW();
 });

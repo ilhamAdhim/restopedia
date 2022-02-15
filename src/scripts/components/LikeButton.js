@@ -9,7 +9,6 @@ class LikeButton extends HTMLElement {
   }
 
   _renderLiked() {
-    console.log("ini Liked");
     this.innerHTML = `
       <button class="btn-fav" id="likeButton" aria-label="Unlike this restaurant"> 
         <i class="fa fa-heart-o icon" aria-hidden="true"></i>
@@ -18,7 +17,6 @@ class LikeButton extends HTMLElement {
   }
 
   _renderNormal() {
-    console.log("ini ormal");
     this.innerHTML = `
       <button class="btn-fav" id="likeButton" aria-label="Like this restaurant"> 
         <i class="fa fa-heart icon" aria-hidden="true"></i>

@@ -6,7 +6,6 @@ class DetailResto extends HTMLElement {
   }
 
   set restaurant(restaurant) {
-    console.log(restaurant, "ini detail resto");
     this._detailRestaurant = restaurant;
     this._render();
   }
@@ -94,8 +93,8 @@ class DetailResto extends HTMLElement {
     const reviewComponent = document.querySelector("#review-pengguna");
     let topReviews = [];
 
-    if (this._detailRestaurant?.customerReviews.length > 3)
-      topReviews = this._detailRestaurant?.customerReviews.split(0, 3);
+    if (this._detailRestaurant?.customerReviews?.length > 3)
+      topReviews = this._detailRestaurant?.customerReviews?.slice(0, 3);
     else topReviews = this._detailRestaurant?.customerReviews;
 
     topReviews.map((item) => {

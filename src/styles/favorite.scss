@@ -1,0 +1,35 @@
+#empty-data {
+  .primary-message {
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  .secondary-message {
+    margin-top: 0.8em;
+    color: grey;
+    font-size: 1em;
+  }
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0 5vw;
+
+  .image-not-found {
+    margin: auto;
+
+    align-items: center;
+
+    width: 300px;
+  }
+}
+
+// Small screen
+@media screen and (max-width: 540px) {
+  #empty-data {
+    .image-not-found {
+      width: 200px;
+    }
+  }
+}

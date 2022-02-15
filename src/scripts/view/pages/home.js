@@ -8,7 +8,7 @@ const Home = {
   
     <div id="content">
     <jumbotron-component></jumbotron-component>
-        <h2> Restaurant List </h2>
+        <h2> Daftar Restoran </h2>
         <list-data></list-data>
     </div>
       `;
@@ -24,7 +24,6 @@ const Home = {
 
     try {
       const dataRestaurant = await APIHandler.getAllRestaurant();
-      console.log(dataRestaurant);
       restaurantListElement.restaurants = dataRestaurant;
       loadingContainer.style.display = "none";
       contentContainer.style.display = "block";

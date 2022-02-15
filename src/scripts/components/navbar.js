@@ -14,7 +14,7 @@ class NavBar extends HTMLElement {
         </button>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#/" class="nav-link nav-link-grow-up">Home</a>
+                    <a href="#/home" class="nav-link nav-link-grow-up">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#/favorite" class="nav-link nav-link-grow-up">Favorite</a>
@@ -25,7 +25,7 @@ class NavBar extends HTMLElement {
             </ul>
             <ul class="sidenav" id="drawer">
               <li class="nav-item">
-                  <a href="/" class="nav-link nav-link-grow-up">Home</a>
+                  <a href="#/home" class="nav-link nav-link-grow-up">Home</a>
               </li>
               <li class="nav-item">
                   <a href="#/favorite" class="nav-link nav-link-grow-up">Favorite</a>

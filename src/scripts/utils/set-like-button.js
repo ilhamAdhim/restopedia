@@ -28,7 +28,6 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector("#likeButton");
     likeButton.addEventListener("click", async () => {
-      console.log("terklik jadi unlike");
       await LikeRestoIDB.updateRestaurant(this._restaurant);
       this._renderButton();
     });
@@ -39,8 +38,6 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector("#likeButton");
     likeButton.addEventListener("click", async () => {
-      console.log("terklik jadi like");
-
       await LikeRestoIDB.deleteRestaurant(this._restaurant.id);
       this._renderButton();
     });
