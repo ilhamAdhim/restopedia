@@ -5,12 +5,29 @@ import "../styles/buttons.scss";
 import "../styles/navbar.scss";
 import "../styles/hero.scss";
 import "../styles/card-item.scss";
+import "../styles/loader.scss";
+import "../styles/detailResto.scss";
+import "../styles/favorite.scss";
 
-import "../scripts/components/navbar.js";
-import "../scripts/components/hero.js";
-import "../scripts/components/ListData.js";
+import "./components/Navbar.js";
+import "../scripts/components/JumbotronComponent.js";
+import "../scripts/components/ListData";
+import "../scripts/components/CardItem";
+import "../scripts/components/DetailResto";
+import "../scripts/components/LikeButton";
+import "../scripts/components/LoadingIndicator";
 
-import main from "./view/main";
+import App from "./view/app.js";
+import "./utils/subscribe-sw.js";
 
-console.log("Hello Coders! aa)");
-main();
+const app = new App({
+  content: document.querySelector("#content"),
+});
+
+window.addEventListener("hashchange", () => {
+  app.renderPage();
+});
+
+window.addEventListener("load", () => {
+  app.renderPage();
+});

@@ -1,10 +1,10 @@
 class NavBar extends HTMLElement {
-	connectedCallback() {
-		this._render();
-	}
+  connectedCallback() {
+    this._render();
+  }
 
-	_render() {
-		this.innerHTML = `
+  _render() {
+    this.innerHTML = `
         <nav>
           <div class="nav-logo">
           <img src="./images/logo-restopedia.png" alt="logo-restopedia">
@@ -14,7 +14,7 @@ class NavBar extends HTMLElement {
         </button>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#/" class="nav-link nav-link-grow-up">Home</a>
+                    <a href="#/home" class="nav-link nav-link-grow-up">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#/favorite" class="nav-link nav-link-grow-up">Favorite</a>
@@ -25,10 +25,10 @@ class NavBar extends HTMLElement {
             </ul>
             <ul class="sidenav" id="drawer">
               <li class="nav-item">
-                  <a href="/" class="nav-link nav-link-grow-up">Home</a>
+                  <a href="#/home" class="nav-link nav-link-grow-up">Home</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link nav-link-grow-up">Favorite</a>
+                  <a href="#/favorite" class="nav-link nav-link-grow-up">Favorite</a>
               </li>
               <li class="nav-item">
                   <a href="https://github.com/ilhamAdhim" class="nav-link nav-link-grow-up" target="_blank" rel="noreferrer">About</a>
@@ -36,7 +36,7 @@ class NavBar extends HTMLElement {
             </ul> 
           </nav>
         `;
-	}
+  }
 }
 
 customElements.define("nav-bar", NavBar);

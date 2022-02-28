@@ -2,9 +2,39 @@ button {
   cursor: pointer;
 }
 
-.button_jumbotron {
-  background-color: #f9a826;
+.btn-fav {
+  background-color: #900c3e;
+  border-radius: 50%;
+  color: white;
+  padding: 1em;
+  height: 55px;
+  width: 55px;
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+.button-jumbotron {
+  margin-top: 2em;
+}
+.button-kembali {
+  width: 120px;
+}
+
+.btn-lihat-detail {
+  width: 100%;
+}
+
+.button-jumbotron {
   width: 200px;
+}
+
+.button-jumbotron,
+.button-kembali,
+.btn-lihat-detail {
+  background-color: #f9a826;
   min-height: 45px;
   border-radius: 0.4em;
   border-width: 0;
@@ -33,7 +63,6 @@ button {
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
-  margin-top: 2em;
 
   &::before {
     background-color: maroon;
@@ -74,7 +103,7 @@ button {
 }
 
 @media screen and (max-width: 680px) {
-  .button_jumbotron {
+  .button-jumbotron {
     width: 30vw;
     span {
       font-size: 2.8vw;
@@ -83,7 +112,7 @@ button {
 }
 
 @media screen and (max-width: 680px) and (min-width: 460px) {
-  .button_jumbotron {
+  .button-jumbotron {
     span {
       font-size: 2.3vw;
     }

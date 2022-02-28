@@ -9,9 +9,18 @@ $button-color: #373737;
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   margin: 0;
+
+  .detail-page {
+    padding: 0 5vw;
+  }
+
   img {
     display: block;
   }
@@ -22,6 +31,12 @@ body {
 
   .card-list {
     display: flex;
+  }
+
+  #page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   main {

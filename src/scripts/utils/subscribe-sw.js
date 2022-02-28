@@ -7,7 +7,6 @@ if ("serviceWorker" in navigator) {
       })
       .catch(function (err) {
         console.log(err);
-
         console.log("Pendaftaran ServiceWorker gagal");
       });
   });
