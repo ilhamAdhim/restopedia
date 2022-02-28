@@ -14,7 +14,6 @@ import "../scripts/components/JumbotronComponent.js";
 import "../scripts/components/ListData";
 import "../scripts/components/CardItem";
 import "../scripts/components/DetailResto";
-import "../scripts/components/LikeButton";
 import "../scripts/components/LoadingIndicator";
 
 import App from "./view/app.js";

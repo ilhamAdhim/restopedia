@@ -1,10 +1,13 @@
 import LikeRestoIDB from "../data/resto-idb";
+import {
+  renderLikeButtonTemplate,
+  renderLikedButtonTemplate,
+} from "../view/templates/LikeButton";
 
 const LikeButtonInitiator = {
   async init({ likeButtonWrapper, data }) {
     this._likeButtonWrapper = likeButtonWrapper;
     this._restaurant = data;
-
     await this._renderButton();
   },
 
@@ -24,9 +27,9 @@ const LikeButtonInitiator = {
   },
 
   _renderLike() {
-    this._likeButtonWrapper.likeStatus = true;
-
+    this._likeButtonWrapper.innerHTML = renderLikedButtonTemplate();
     const likeButton = document.querySelector("#likeButton");
+
     likeButton.addEventListener("click", async () => {
       await LikeRestoIDB.updateRestaurant(this._restaurant);
       this._renderButton();
@@ -34,7 +37,7 @@ const LikeButtonInitiator = {
   },
 
   _renderLiked() {
-    this._likeButtonWrapper.likeStatus = false;
+    this._likeButtonWrapper.innerHTML = renderLikeButtonTemplate();
 
     const likeButton = document.querySelector("#likeButton");
     likeButton.addEventListener("click", async () => {
