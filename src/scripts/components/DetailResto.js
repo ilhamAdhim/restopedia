@@ -19,7 +19,7 @@ class DetailResto extends HTMLElement {
               <div id="rating-count"> </div>
           </div>
 
-          <img class="card-image" 
+          <img class="card-image lazyload" 
             src="${`${CONFIG.BASE_URL}/images/medium/${this._detailRestaurant?.pictureId}`}" 
             alt="${`Image of ${this._detailRestaurant?.name}`}">
           <div class="resto-overview"> Overview </div>

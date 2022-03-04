@@ -1,4 +1,9 @@
+/* eslint-disable no-undef */
 import "regenerator-runtime"; /* for async await transpile */
+
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
 import "../styles/global.scss";
 import "../styles/footer.scss";
 import "../styles/buttons.scss";

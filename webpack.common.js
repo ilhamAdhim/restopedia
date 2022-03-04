@@ -1,8 +1,9 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { InjectManifest } = require("workbox-webpack-plugin");
-
-const path = require("path");
+const ImageminWebpackPlugin = require("imagemin-webpack-plugin").default;
+const imageminMozjpeg = require("imagemin-mozjpeg");
 
 module.exports = {
   stats: "errors-only",
@@ -11,7 +12,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
   },
   module: {
     rules: [
@@ -38,11 +39,22 @@ module.exports = {
     new InjectManifest({
       swSrc: path.resolve(__dirname, "src/scripts/sw.js"),
     }),
+    new ImageminWebpackPlugin({
+      plugins: [
+        imageminMozjpeg({
+          quality: 50,
+          progressive: true,
+        }),
+      ],
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, "src/public/"),
           to: path.resolve(__dirname, "dist/"),
+          globOptions: {
+            ignore: ["**/images/heros/**"],
+          },
         },
       ],
     }),
