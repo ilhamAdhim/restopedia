@@ -5,7 +5,14 @@ const common = require("./webpack.common");
 module.exports = merge(common, {
   mode: "development",
   devServer: {
-    contentBase: path.resolve(__dirname, "dist"),
-    overlay: true,
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+    },
   },
 });

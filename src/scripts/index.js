@@ -1,4 +1,9 @@
+/* eslint-disable no-undef */
 import "regenerator-runtime"; /* for async await transpile */
+
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
 import "../styles/global.scss";
 import "../styles/footer.scss";
 import "../styles/buttons.scss";
@@ -14,7 +19,6 @@ import "../scripts/components/JumbotronComponent.js";
 import "../scripts/components/ListData";
 import "../scripts/components/CardItem";
 import "../scripts/components/DetailResto";
-import "../scripts/components/LikeButton";
 import "../scripts/components/LoadingIndicator";
 
 import App from "./view/app.js";

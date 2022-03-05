@@ -20,7 +20,7 @@ const Detail = {
                 <detail-resto></detail-resto>
             </div>
 
-            <like-button></like-button>
+            <div id="likeButtonWrapper"></div>
         </div>
       `;
   },
@@ -29,7 +29,7 @@ const Detail = {
     const contentContainer = document.querySelector("#content-detail");
     const loadingContainer = document.querySelector("loading-indicator");
     const detailRestoContainer = document.querySelector("detail-resto");
-    const likeButtonWrapper = document.querySelector("like-button");
+    const likeButtonWrapper = document.querySelector("#likeButtonWrapper");
 
     loadingContainer.style.display = "block";
     contentContainer.style.display = "none";
