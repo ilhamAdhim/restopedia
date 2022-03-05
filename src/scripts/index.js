@@ -14,7 +14,7 @@ import "../styles/loader.scss";
 import "../styles/detailResto.scss";
 import "../styles/favorite.scss";
 
-import "./components/Navbar.js";
+import "../scripts/components/Navbar.js";
 import "../scripts/components/JumbotronComponent.js";
 import "../scripts/components/ListData";
 import "../scripts/components/CardItem";
