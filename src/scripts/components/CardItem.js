@@ -22,7 +22,7 @@ class CardItem extends HTMLElement {
       .join(" ");
 
     this.innerHTML = `
-      <img class="card-image lazyload"  src="${`
+      <img class="card-image lazyload"  data-src="${`
           ${CONFIG.BASE_URL}/images/medium/${this._restaurant.pictureId}`}" alt="${`Image of ${this._restaurant?.name}`}">
       <div class="card-title">${this._restaurant?.name}</div>
       <div class="card-body">

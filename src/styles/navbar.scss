@@ -42,7 +42,6 @@ nav {
   .nav-item {
     padding: 1em;
     font-weight: 800;
-
     list-style-type: none;
   }
 
@@ -55,6 +54,8 @@ nav {
   }
 
   .nav-link {
+    min-width: 45px;
+    min-height: 45px;
     text-decoration: none;
     color: maroon;
     padding: 20px 0px;

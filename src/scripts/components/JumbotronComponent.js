@@ -11,7 +11,7 @@ class JumbotronComponent extends HTMLElement {
                 <source media="(max-width: 600px)" srcset="./images/heros/hero-image_1-small.jpg" type="image/jpeg">
                 <img 
                 class="lazyload"
-                src="./images/heros/hero-image_1-large.jpg" 
+                data-src="./images/heros/hero-image_1-large.jpg" 
                 alt="Jumbotron Image - Chef Serving Food"></img>
             </picture>
           </div>
